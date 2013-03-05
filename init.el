@@ -6,5 +6,4 @@
 ;; user interface customizations
 (set-face-attribute 'default nil :font "Monaco 12")
 (custom-set-variables
- '(menu-bar-mode nil)
  '(tool-bar-mode nil))
