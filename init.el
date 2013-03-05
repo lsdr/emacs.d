@@ -4,6 +4,8 @@
 (package-initialize)
 
 ;; user interface customizations
-(set-face-attribute 'default nil :font "Monaco 12")
-(custom-set-variables
- '(tool-bar-mode nil))
+;; (set-face-attribute 'default nil :font "Monaco 12")
+;; (custom-set-variables
+;;  '(tool-bar-mode nil))
+(set-default-font "Monaco 12")
+(custom-set-variables '(tool-bar-mode nil))
