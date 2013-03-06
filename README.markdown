@@ -14,3 +14,10 @@ To update:
     $ cd .emacs.d
     $ git pull origin master
 ```
+
+## References
+* http://wikemacs.org/wiki/Look_and_Feel
+* http://sip.clarku.edu/tutorials/intro_emacs.html
+* http://stackoverflow.com/questions/151945/how-do-i-control-how-emacs-makes-backup-files
+* http://homepages.inf.ed.ac.uk/s0243221/emacs/
+* http://emacswiki.org/emacs/SetFonts

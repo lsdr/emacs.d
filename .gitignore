@@ -2,11 +2,10 @@
 *.bkp
 *.old
 *.backup
-
 *.pyc
 *.pyo
-
 .DS_Store
-
 tmp/*
 bkp/*
+elpa
+elpa/*
