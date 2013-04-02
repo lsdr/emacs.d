@@ -21,3 +21,6 @@
 (dolist (p my-packages)
   (when (not (package-installed-p p))
     (package-install p)))
+
+;; setting up backup
+(setq backup-directory-alist `(("." . "~/.emacs.d/saves")))
