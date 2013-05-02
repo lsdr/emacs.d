@@ -9,3 +9,6 @@ tmp/*
 bkp/*
 elpa
 elpa/*
+url/*
+places
+.smex-items
