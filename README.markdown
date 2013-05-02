@@ -16,6 +16,8 @@ To update:
 ```
 
 ## References
+* http://www.stevenchan.us/emacs-visual-cheat-sheet
+* http://www.emacswiki.org/emacs/ColorTheme
 * http://wikemacs.org/wiki/Look_and_Feel
 * http://sip.clarku.edu/tutorials/intro_emacs.html
 * http://stackoverflow.com/questions/151945/how-do-i-control-how-emacs-makes-backup-files
