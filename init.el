@@ -20,7 +20,7 @@
 ;; (set-face-attribute 'default nil :font "Monaco 12")
 ;; (custom-set-variables
 ;;  '(tool-bar-mode nil))
-(set-default-font "Monaco 12")
+(set-default-font "Droid Sans Mono 14")
 (load-theme 'monokai)
 
 ;; list of packages which will be installed if they are not be present
@@ -48,7 +48,7 @@
     ;; and smaller 80 column windows for smaller displays
     ;; pick whatever numbers make sense for you
     (if (>= (x-display-pixel-width) 1280)
-           (add-to-list 'default-frame-alist (cons 'width 170))
+           (add-to-list 'default-frame-alist (cons 'width 150))
            (add-to-list 'default-frame-alist (cons 'width 120)))
     ;; for the height, subtract a couple hundred pixels
     ;; from the screen height (for panels, menubars and
