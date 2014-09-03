@@ -23,3 +23,7 @@ To update:
 * http://stackoverflow.com/questions/151945/how-do-i-control-how-emacs-makes-backup-files
 * http://homepages.inf.ed.ac.uk/s0243221/emacs/
 * http://emacswiki.org/emacs/SetFonts
+* http://clojure-doc.org/articles/tutorials/emacs.html
+* http://www.braveclojure.com/using-emacs-with-clojure/
+* http://www.braveclojure.com/basic-emacs/
+
