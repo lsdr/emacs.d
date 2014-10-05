@@ -5,7 +5,7 @@ Take a walk on the wild side
 On Home dir:
 
 ```sh
-    $ git clone git://github.com/lsdr/emacs.d.git .emacs.d  
+    $ git clone git://github.com/lsdr/emacs.d.git .emacs.d
 ```
 
 To update:
