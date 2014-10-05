@@ -1,19 +1,4 @@
-## Moto
-Take a walk on the wild side
-
-## Usage
-On Home dir:
-
-```sh
-    $ git clone git://github.com/lsdr/emacs.d.git .emacs.d
-```
-
-To update:
-
-```sh
-    $ cd .emacs.d
-    $ git pull origin master
-```
+Take a walk on the wild side.
 
 ## References
 * http://www.stevenchan.us/emacs-visual-cheat-sheet
@@ -26,4 +11,6 @@ To update:
 * http://clojure-doc.org/articles/tutorials/emacs.html
 * http://www.braveclojure.com/using-emacs-with-clojure/
 * http://www.braveclojure.com/basic-emacs/
-
+* http://clojure-doc.org/articles/tutorials/emacs.html
+* http://ergoemacs.org/emacs/emacs_package_system.html
+* http://batsov.com/articles/2012/02/19/package-management-in-emacs-the-good-the-bad-and-the-ugly/

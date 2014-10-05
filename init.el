@@ -1,3 +1,10 @@
+;; TODO:
+;; setup IDO and smex-- looked like awesome tools for a beginner when playing
+;;                      with the starter-kit
+;; install basic support for Clojure, LISP and ML
+;;
+
+;; package management
 (require 'package)
 (add-to-list 'package-archives
              '("marmalade" . "http://marmalade-repo.org/packages/") t)
@@ -8,22 +15,15 @@
 (when (null package-archive-contents)
   (package-refresh-contents))
 
-; (defvar my-packages '(starter-kit
-;                       starter-kit-lisp
-;                       starter-kit-bindings
-;                       starter-kit-ruby
-;                       clojure-mode
-;                       sml-mode
-;                       scpaste))
+;; interface
+(set-default-font "Droid Sans Mono 14")      ; modern font please
+(custom-set-variables '(tool-bar-mode nil))  ; no stinkin' toolbar
 
-; (dolist (p my-packages)
-;   (when (not (package-installed-p p))
-;     (package-install p)))
-
-(set-default-font "Droid Sans Mono 14")
-; (set-face-foreground 'vertical-border "white")
+;; working files and dirs
 (setq backup-directory-alist `(("." . "~/.emacs.d/saves")))
 
+
+;;;;;;; previous attempt ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
 ; (require 'package)
 ; (add-to-list 'package-archives
@@ -32,26 +32,18 @@
 ;              '("marmalade" . "http://marmalade-repo.org/packages/") t)
 ; (package-initialize)
 
-; (custom-set-variables
-;  ;; custom-set-variables was added by Custom.
-;  ;; If you edit it by hand, you could mess it up, so be careful.
-;  ;; Your init file should contain only one such instance.
-;  ;; If there is more than one, they won't work right.
-;  '(custom-safe-themes (quote ("9a9e75c15d4017c81a2fe7f83af304ff52acfadd7dde3cb57595919ef2e8d736" "d24e10524bb50385f7631400950ba488fa45560afcadd21e6e03c2f5d0fad194" default))))
-; (custom-set-faces
-;  ;; custom-set-faces was added by Custom.
-;  ;; If you edit it by hand, you could mess it up, so be careful.
-;  ;; Your init file should contain only one such instance.
-;  ;; If there is more than one, they won't work right.
-;  )
-
 ; ;; list of packages which will be installed if they are not be present
 ; ;; from: https://github.com/technomancy/emacs-starter-kit
 ; (when (not package-archive-contents)
 ;   (package-refresh-contents))
 
-; (defvar my-packages '(starter-kit starter-kit-lisp starter-kit-ruby starter-kit-js sml-mode)
-;   "A list of packages to ensure are installed at launch.")
+; (defvar my-packages '(starter-kit
+;                       starter-kit-lisp
+;                       starter-kit-bindings
+;                       starter-kit-ruby
+;                       clojure-mode
+;                       sml-mode
+;                       scpaste))
 
 ; (dolist (p my-packages)
 ;   (when (not (package-installed-p p))
