@@ -14,3 +14,6 @@ Take a walk on the wild side.
 * http://clojure-doc.org/articles/tutorials/emacs.html
 * http://ergoemacs.org/emacs/emacs_package_system.html
 * http://batsov.com/articles/2012/02/19/package-management-in-emacs-the-good-the-bad-and-the-ugly/
+* https://github.com/technomancy/better-defaults
+* https://github.com/technomancy/dotfiles/blob/master/.emacs.d/init.el
+* https://github.com/DarwinAwardWinner/ido-ubiquitous
