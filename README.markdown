@@ -17,3 +17,4 @@ Take a walk on the wild side.
 * https://github.com/technomancy/better-defaults
 * https://github.com/technomancy/dotfiles/blob/master/.emacs.d/init.el
 * https://github.com/DarwinAwardWinner/ido-ubiquitous
+* https://github.com/purcell/emacs.d
