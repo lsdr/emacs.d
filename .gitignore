@@ -13,3 +13,4 @@ url/*
 places
 .smex-items
 auto-save-list/*
+.projectile

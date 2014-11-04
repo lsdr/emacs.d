@@ -1,4 +1,6 @@
 ;; package management
+(load-file (concat user-emacs-directory "utils.el"))
+
 (require 'package)
 (add-to-list 'package-archives
              '("marmalade" . "http://marmalade-repo.org/packages/"))
@@ -10,9 +12,10 @@
   (package-refresh-contents))
 
 (defvar my-packages '(better-defaults smex ido-hacks auto-complete
-                      projectile paredit zenburn-theme
+                      projectile paredit zenburn-theme diminish
                       clojure-mode cider
-                      ruby-additional ruby-hash-syntax inf-ruby ac-inf-ruby
+                      ruby-hash-syntax inf-ruby ac-inf-ruby rbenv
+                      ruby-tools ruby-end robe
                       markdown-mode yaml-mode))
 
 (dolist (p my-packages)
@@ -26,11 +29,11 @@
       ido-use-virtual-buffers t
       ido-handle-duplicate-virtual-buffers 2
       column-number-mode t
-      backup-directory )
+      visible-bell t
+      backup-directory)
 
-;; interface improvements
-(set-default-font "Droid Sans Mono 14") ; modern font please
-(load-theme 'zenburn t)
+;; don't save inexistent buffer
+(setq confirm-nonexistent-file-or-buffer nil)
 
 ;; working files and dirs
 (setq backup-directory-alist `(("." . "~/.emacs.d/saves")))
@@ -44,13 +47,16 @@
 
 (global-set-key (kbd "M-x") 'smex) ; has to happen after ido-hacks-mode
 
+;; paredit loaded globally
 (autoload 'enable-paredit-mode "paredit")
 
-(require 'auto-complete-config)
-(ac-config-default)
+;; enabling projectile
+(projectile-global-mode)
 
-;; load script files in conf.d
-(mapc 'load (directory-files (concat user-emacs-directory "conf.d")
-                              t "^[^#].*el$"))
+;; all set! now load script files in conf.d
+(load-config "ui")
+(load-config "auto-complete")
+(load-config "ruby")
+(load-config "markup")
 
 ;; that's it
