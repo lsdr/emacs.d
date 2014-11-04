@@ -25,7 +25,7 @@
 (add-hook 'ruby-mode-hook 'subword-mode)
 
 ;; add "end" automagically when proper
-; (require 'ruby-end)
+(require 'ruby-end)
 
 ;; support for rbenv (automagically uses global, etc)
 (require 'rbenv)
@@ -50,13 +50,14 @@
 (global-set-key (kbd "C-c r r") 'inf-ruby)
 
 ;; context-based completion, REPL and doc lookup
-; (require 'robe)
-; (after-load 'ruby-mode
-;   (add-hook 'ruby-mode-hook 'robe-mode))
-; (after-load 'robe
-;   (add-hook 'robe-mode-hook
-;             (lambda ()
-;               (add-to-list 'ac-sources 'ac-source-robe)
-;               (set-auto-complete-as-completion-at-point-function))))
+(require 'robe)
+(after-load 'ruby-mode
+  (add-hook 'ruby-mode-hook 'robe-mode))
+(after-load 'robe
+  (add-hook 'robe-mode-hook 'ac-robe-setup)
+  (add-hook 'robe-mode-hook
+            (lambda ()
+              (add-to-list 'ac-sources 'ac-source-robe)
+              (set-auto-complete-as-completion-at-point-function))))
 
 ;; that's it
